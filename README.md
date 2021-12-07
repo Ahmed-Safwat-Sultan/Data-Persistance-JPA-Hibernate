@@ -5,6 +5,24 @@ Critter Chronologer a Software as a Service application that provides a scheduli
 
 ## Getting Started
 
+### Dependencies
+
+* [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download) (or Ultimate) recommended 
+* [Java SE Development Kit 8+](https://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* [Maven](https://maven.apache.org/download.cgi)
+* [MySQL Server 8](https://dev.mysql.com/downloads/mysql/) (or another standalone SQL instance)
+* [Postman](https://www.getpostman.com/downloads/)
+
+Part of this project involves configuring a Spring application to connect to an external data source. Before beginning this project, you must install a database to connect to. Here are [instructions for installing MySQL 8](https://dev.mysql.com/doc/refman/8.0/en/installing.html).
+
+You should install the Server and Connector/J, but it is also convenient to install the Documentation and Workbench.
+
+Alternately, you may wish to run MySQL in a docker container, using [these instructions](https://hub.docker.com/_/mysql/).
+
+After installing the Server, you will need to create a user that your application will use to perform operations on the server. You should create a user that has all permissions on localhost using the sql command found [here](https://dev.mysql.com/doc/refman/8.0/en/creating-accounts.html).
+
+Another SQL database may be used if desired, but do not use the H2 in-memory database as your primary datasource.
+
 ### Installation
 
 1. Clone or download this repository.
